@@ -44,9 +44,12 @@ function App() {
   return (
     <TodoProvider value={{todos,addTodo,updateTodo,deleteTodo,toggleComplete}}>
      
-    <div className="bg-[#172842] w-full h-[90vh] md:w-[80vw] md:h-[90vh] py-8">
+    <div className="bg-[#172842] min-h-[80vh] h-auto  md:w-[80vw]  py-8">
                 <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
-                    <div className="text-[1.75rem] md:text-4xl  font-bold text-center mb-8 mt-2  text-green-400 drop-shadow-[0_0_10px_rgba(34,197,94,0.8)]">Manage Your To-Dos</div>
+                <div className="text-[1.75rem] md:text-4xl font-bold text-center mb-8 mt-2 text-green-400 drop-shadow-[0_0_10px_rgba(34,197,94,0.8)] cursor-pointer hover:underline hover:decoration-wavy hover:decoration-green-400 transition-all">
+                    Manage Your To-Dos
+                            </div>
+
                     <div className="mb-13 md:mb-4">
                         {/* Todo form goes here */} 
                         <TodoForm/>
