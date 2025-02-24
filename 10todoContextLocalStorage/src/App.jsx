@@ -46,7 +46,7 @@ function App() {
      
     <div className="bg-[#172842] min-h-[80vh] h-auto  md:w-[80vw]  py-8">
                 <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
-                <div className="text-[1.75rem] md:text-4xl font-bold text-center mb-8 mt-2 text-green-400 drop-shadow-[0_0_10px_rgba(34,197,94,0.8)] cursor-pointer hover:underline hover:decoration-wavy hover:decoration-green-400 transition-all">
+                <div className="text-[1.75rem] md:text-4xl font-bold text-center mb-8 mt-2 text-green-400 drop-shadow-[0_0_10px_rgba(34,197,94,0.8)] cursor-pointer ">
                     Manage Your To-Dos
                             </div>
 
@@ -54,11 +54,11 @@ function App() {
                         {/* Todo form goes here */} 
                         <TodoForm/>
                     </div>
-                    <div className="flex flex-wrap gap-y-3">
+                    <div className="flex flex-col gap-y-3 overflow-y-scroll md:h-[300px] h-[400px] border-so border-2 p-8 border-emerald-600 ">
                         {/*Loop and Add TodoItem here */}
 
                       {todos.map((todo) => (
-                        <div className="w-full"
+                        <div className="w-full "
                             key={todo.id}>
 
                                 <TodoItem todo={todo}/>
