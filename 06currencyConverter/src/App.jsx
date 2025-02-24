@@ -195,12 +195,13 @@ const convert = () => {
 
 
 return (
-  <div
-      className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
-      style={{
-          backgroundImage: `url("https://images.pexels.com/photos/7567606/pexels-photo-7567606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")`,
-      }}
-  >
+    <div className="
+    w-full h-screen flex justify-center items-center bg-cover bg-no-repeat
+    bg-[url('https://images.pexels.com/photos/7567529/pexels-photo-7567529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] 
+    md:bg-[url('https://images.pexels.com/photos/7567606/pexels-photo-7567606.jpeg')]">
+
+
+      
       <div className="w-full">
           <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
               <form
