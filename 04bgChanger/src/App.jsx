@@ -11,7 +11,7 @@ function App() {
    style={{backgroundColor: color}}
    >
 
-<div className='fixed flex flex-wrap justify-center bottom-27 inset-x-0 px-2   '>
+<div className='fixed flex flex-wrap justify-center md:bottom-27 bottom-20 p-2 inset-x-0 items-center '>
   
   <div className='fixed flex flex-wrap justify-center gap-3 shadow-lg bg-gray-300 px-1.5 py-1.5 rounded-xl border-[1.5px] '>
    
